@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Sticky Navigation */
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #4a7c59;
+    padding: 1rem 0;
+    z-index: 1000;
+}
+
+.sticky-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.sticky-nav ul li {
+    margin: 0 1rem;
+}
+
+.sticky-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.sticky-nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Header */
+header {
+    background-color: #4a7c59;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/* Main Content */
+main {
+    padding: 2rem 0;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #4a7c59;
+    margin-bottom: 1.5rem;
+}
+
+.lead {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Chapters */
+.chapter {
+    margin-bottom: 2rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chapter-title {
+    font-size: 1.8rem;
+    color: #ff6b6b;
+    margin-bottom: 1rem;
+}
+
+/* Adventures */
+.adventure-item {
+    margin-bottom: 2rem;
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-left: 5px solid #4ecdc4;
+}
+
+.adventure-title {
+    font-size: 1.5rem;
+    color: #4ecdc4;
+    margin-bottom: 0.5rem;
+}
+
+/* Skills */
+.skill-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill-list li {
+    flex-basis: calc(33.333% - 1rem);
+    background-color: #ffeaa7;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #6c5ce7;
+}
+
+/* Philosophy */
+blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #e17055;
+    border-left: 4px solid #e17055;
+    padding-left: 1rem;
+    margin: 2rem 0;
+}
+
+/* Future Plans */
+.future-plans ul {
+    list-style-type: none;
+}
+
+.future-plans li {
+    background-color: #55efc4;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    color: #2d3436;
+    font-weight: bold;
+}
+
+/* Closing */
+.closing {
+    background-color: #dfe6e9;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #2d3436;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.social-links li {
+    margin: 0 1rem;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .main-title {
+        font-size: 3rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .skill-list li {
+        flex-basis: calc(50% - 1rem);
+    }
+}
